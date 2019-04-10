@@ -27,7 +27,7 @@
     --light: #f8f9fa;
     --dark: #343a40;
     --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
+    --breakpoint-sm: 480px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
@@ -553,9 +553,9 @@
     margin-left: auto;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .container {
-      max-width: 540px;
+      max-width: 470px;
     }
   }
   
@@ -823,7 +823,7 @@
     margin-left: 91.666667%;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .col-sm {
       -ms-flex-preferred-size: 0;
       flex-basis: 0;
@@ -2313,7 +2313,7 @@
     width: 100%;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .form-inline label {
       display: -ms-flexbox;
       display: flex;
@@ -3084,7 +3084,7 @@
     left: auto;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .dropdown-menu-sm-left {
       right: auto;
       left: 0;
@@ -4249,7 +4249,7 @@
     }
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .navbar-expand-sm {
       -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
@@ -4679,7 +4679,7 @@
     margin-bottom: 15px;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .card-deck {
       -ms-flex-flow: row wrap;
       flex-flow: row wrap;
@@ -4710,7 +4710,7 @@
     margin-bottom: 15px;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .card-group {
       -ms-flex-flow: row wrap;
       flex-flow: row wrap;
@@ -4754,7 +4754,7 @@
     margin-bottom: 0.75rem;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .card-columns {
       -webkit-column-count: 3;
       -moz-column-count: 3;
@@ -5090,7 +5090,7 @@
     border-radius: 0.3rem;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .jumbotron {
       padding: 4rem 2rem;
     }
@@ -5402,7 +5402,7 @@
     border-bottom-left-radius: 0;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .list-group-horizontal-sm {
       -ms-flex-direction: row;
       flex-direction: row;
@@ -5906,7 +5906,7 @@
     overflow: scroll;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .modal-dialog {
       max-width: 500px;
       margin: 1.75rem auto;
@@ -6759,7 +6759,7 @@
     display: inline-flex !important;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .d-sm-none {
       display: none !important;
     }
@@ -7132,7 +7132,7 @@
     align-self: stretch !important;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .flex-sm-row {
       -ms-flex-direction: row !important;
       flex-direction: row !important;
@@ -7700,7 +7700,7 @@
     float: none !important;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .float-sm-left {
       float: left !important;
     }
@@ -8346,7 +8346,7 @@
     margin-left: auto !important;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .m-sm-0 {
       margin: 0 !important;
     }
@@ -9760,7 +9760,7 @@
     text-align: center !important;
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .text-sm-left {
       text-align: left !important;
     }

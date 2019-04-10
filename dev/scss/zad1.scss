@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 .test {
     font-size: 21px;
@@ -10,16 +6,18 @@
 
 img {
     width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
+    height: auto;
+    margin-bottom: 1rem;
+   
 }
 
-@media only screen and (max-width: 991px) {
-    .xxx {
-      width: 100%;
-      img {
-          width: 30%;
-          height: auto;
-      }
-    }
-  }
+
+
+
+
+
+
+
+
+  
+

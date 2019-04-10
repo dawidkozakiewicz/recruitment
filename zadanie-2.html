@@ -1,4 +1,7 @@
+<!-- w tej linijce powinno się znaleźć: <!DOCTYPE html> -->
 <html lang="en">
+<!-- powyżej powinien znaleźć się faktycznie używany na tej stronie język czyli lang="pl" -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,6 +9,7 @@
     <title>Zadanie 2</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
@@ -13,20 +17,48 @@
                 <header class="text-center mt-5 mb-5">
                     <h1>Zadanie 2</h1>
                 </header>
-                <h3>Zaimplementuj obsługę przycisku, tak aby po kliku otwierał się modal z informacją tekstowa oraz przyciskiem zamykajacym modal.</h3>
-                <h5>Bonus: Dodaj obsługę zamykania modala po kliknieciu w obszar poza modalem oraz po przesunieciu (swipe) modalu na urządzeniu mobilnym.</h5>
-                <br/>
-                <button id="open-modal" type="button" class="btn btn-primary">Launch modal</button>
+                <h3>Zaimplementuj obsługę przycisku, tak aby po kliku otwierał się modal z informacją tekstowa oraz
+                    przyciskiem zamykajacym modal.</h3>
+                <h5>Bonus: Dodaj obsługę zamykania modala po kliknieciu w obszar poza modalem oraz po przesunieciu
+                    (swipe) modalu na urządzeniu mobilnym.</h5>
+                <br />
+                <button id="open-modal" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#exampleModal">Launch modal</button>
             </div>
         </div>
     </div>
     <!-- Rozwiązanie zadania umieść poniżej tego komentarza -->
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <footer>
+        <!-- footer nie jest miejscem na odnośniki do skryptów, lepiej zrobić to przed zakończeniem sekcji body -->
+
         <script src="src/jquery-1.10.2.js"></script>
         <script src="src/bootstrap.min.js"></script>
         <script src="dist/js/app.min.js"></script>
     </footer>
 </body>
+
 </html>
