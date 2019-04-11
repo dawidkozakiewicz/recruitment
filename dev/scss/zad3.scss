@@ -12,4 +12,17 @@ header {
     border: 1px solid black;
     z-index: 10;
     width: 100%;
+    background-color: white;
+}
+
+
+
+.fixed-nav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    max-width: 1108px;
+    margin: 0 auto;
+    border: 1px solid black
 }
