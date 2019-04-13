@@ -243,54 +243,31 @@
         <script src="dist/js/app.min.js"></script>
     </footer>
     <script>
-        $(document).ready(() => {
-            $('header').css({
-                "border": "1px solid black",
-                "z-index": "10",
-                "width": "100%",
-                "background-color": "white",
-                "position": "relative",
-                "top": "28px",
-                "max-width": "1108px"
-            })
+        // $(window).scroll(function () {
+        //     if ($(window).scrollTop() >= 50) {
+        //         $('header').addClass('fixed-header');
 
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= 50) {
-                    $('header').css({
-                        "position": "fixed",
-                        "top": "-48px",
-                        "left": "0",
-                        "right": "0",
-                        "width": "100%",
-                        "margin": "0 auto",
-                        "border": "1px solid black",
-                        "max-width": "1108px"
-                    })
+        //     } else {
+        //         $('header').removeClass('fixed-header');
 
-                } else {
-                    $('header').css({
-                        "border": "1px solid black",
-                        "z-index": "10",
-                        "width": "100%",
-                        "background-color": "white",
-                        "position": "relative",
-                        "max-width": "1108px",
-                        "top": "28px"
-                    })
+        //     }
+        // });
 
-                }
-            });
+        // $(window).scroll(function () {
+        //     if ($(window).scrollTop() >= 50) {
+        //         $('nav').addClass('fixed-nav');
 
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= 50) {
-                    $('nav').addClass('fixed-nav');
+        //     } else {
+        //         $('nav').removeClass('fixed-nav');
 
-                } else {
-                    $('nav').removeClass('fixed-nav');
+        //     }
+        // });
 
-                }
-            });
+        $(document).ready(()=>{
+            $(".content").prepend("<header><h1>HEADER CREATED BY JQUERY</h1></header>");
         })
+       
+
     </script>
 </body>
 
