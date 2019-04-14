@@ -234,7 +234,57 @@
         </div>
     </div>
     <!-- Rozwiązanie zadania umieść poniżej tego komentarza -->
+    <script>
+        $(document).ready(() => {
+  let widthOfContent2 = $(".content").css("width");
+  $("header").css({
+    "border": "1px solid black",
+    "z-index": "10",
+    "width": widthOfContent2,
+    "background-color": "white",
+    "position": "relative",
+    "top": "28px",
+    "max-width": widthOfContent2
+  });
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= 50) {
+    let widthOfContent = $(".content").css("width");
+      $("header").css({
+        "position": "fixed",
+        "top": "-48px",
+        "margin-left": "0",
+        "margin-right": "0",
+        "left": "0",
+        "right": "0",
+        "self-align": "center",
+        "margin": "0 auto",
+        "border": "1px solid black",
+        "width": widthOfContent,
+        "max-width": widthOfContent
+      });
+    } else {
+      let widthOfContent3 = $(".content").css("width");
+      $("header").css({
+        "border": "1px solid black",
+        "z-index": "10",
+        "width": widthOfContent3,
+        "background-color": "white",
+        "position": "relative",
+        "max-width": widthOfContent3,
+        "top": "28px"
+      });
+    }
+  });
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= 50) {
+      $("nav").addClass("fixed-nav");
+    } else {
+      $("nav").removeClass("fixed-nav");
+    }
+  });
+});
 
+    </script>
 
     <footer>
         <!-- footer nie jest miejscem na odnośniki do skryptów, lepiej zrobić to przed zakończeniem sekcji body -->
@@ -242,56 +292,8 @@
         <script src="src/bootstrap.min.js"></script>
         <script src="dist/js/app.min.js"></script>
     </footer>
-    <script>
-        $(document).ready(() => {
-            $('header').css({
-                "border": "1px solid black",
-                "z-index": "10",
-                "width": "100%",
-                "background-color": "white",
-                "position": "relative",
-                "top": "28px",
-                "max-width": "1108px"
-            })
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= 50) {
-                    $('header').css({
-                        "position": "fixed",
-                        "top": "-48px",
-                        "left": "0",
-                        "right": "0",
-                        "width": "100%",
-                        "margin": "0 auto",
-                        "border": "1px solid black",
-                        "max-width": "1108px"
-                    })
-
-                } else {
-                    $('header').css({
-                        "border": "1px solid black",
-                        "z-index": "10",
-                        "width": "100%",
-                        "background-color": "white",
-                        "position": "relative",
-                        "max-width": "1108px",
-                        "top": "28px"
-                    })
-
-                }
-            });
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= 50) {
-                    $('nav').addClass('fixed-nav');
-
-                } else {
-                    $('nav').removeClass('fixed-nav');
-
-                }
-            });
-        })
-    </script>
+    
+  
 </body>
 
 </html>
