@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zadanie 3</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <script src="src/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -234,66 +235,51 @@
         </div>
     </div>
     <!-- Rozwiązanie zadania umieść poniżej tego komentarza -->
-    <script>
-        $(document).ready(() => {
-  let widthOfContent2 = $(".content").css("width");
-  $("header").css({
-    "border": "1px solid black",
-    "z-index": "10",
-    "width": widthOfContent2,
-    "background-color": "white",
-    "position": "relative",
-    "top": "28px",
-    "max-width": widthOfContent2
-  });
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= 50) {
-    let widthOfContent = $(".content").css("width");
-      $("header").css({
-        "position": "fixed",
-        "top": "-48px",
-        "margin-left": "0",
-        "margin-right": "0",
-        "left": "0",
-        "right": "0",
-        "self-align": "center",
-        "margin": "0 auto",
-        "border": "1px solid black",
-        "width": widthOfContent,
-        "max-width": widthOfContent
-      });
-    } else {
-      let widthOfContent3 = $(".content").css("width");
-      $("header").css({
-        "border": "1px solid black",
-        "z-index": "10",
-        "width": widthOfContent3,
-        "background-color": "white",
-        "position": "relative",
-        "max-width": widthOfContent3,
-        "top": "28px"
-      });
-    }
-  });
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= 50) {
-      $("nav").addClass("fixed-nav");
-    } else {
-      $("nav").removeClass("fixed-nav");
-    }
-  });
-});
-
-    </script>
-
     <footer>
         <!-- footer nie jest miejscem na odnośniki do skryptów, lepiej zrobić to przed zakończeniem sekcji body -->
         <script src="src/jquery-1.10.2.js"></script>
         <script src="src/bootstrap.min.js"></script>
         <script src="dist/js/app.min.js"></script>
     </footer>
-    
-  
+    <script>
+        $(document).ready(() => {
+            let widthOfContent = $(".content").css("width");
+            $("header").css({
+                "border": "1px solid black",
+                "z-index": "10",
+                "width": widthOfContent,
+                "background-color": "white",
+                "position": "relative",
+                "top": "28px",
+                "max-width": widthOfContent
+            });
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 50) {
+                    let widthOfContent2 = $(".content").css("width");
+                    $("header").css({
+                        "position": "fixed",
+                        "top": "-48px",
+                        "margin-left": "0",
+                        "margin-right": "0",
+                        "left": "0",
+                        "right": "0",
+                        "self-align": "center",
+                        "margin": "0 auto",
+                        "width": widthOfContent2,
+                        "max-width": widthOfContent2
+                    });
+                } else {
+                    let widthOfContent3 = $(".content").css("width");
+                    $("header").css({
+                        "width": widthOfContent3,
+                        "position": "relative",
+                        "max-width": widthOfContent3,
+                        "top": "28px"
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1174,4 +1174,3 @@ h2,h3{page-break-after:avoid}@page{size:a3}body{min-width:992px !important}.cont
 .table td,.table th{background-color:#fff !important}.table-bordered th,.table-bordered td{border:1px solid #dee2e6 !important}
 .table-dark{color:inherit}.table-dark th,.table-dark td,.table-dark thead th,.table-dark tbody+tbody{border-color:#dee2e6}
 .table .thead-dark th{color:inherit;border-color:#dee2e6}}.test{font-size:21px}img{width:100%;height:auto;margin-bottom:1rem}
-.fixed-nav{position:fixed;top:50px;right:0;left:0;max-width:1108px;margin:0 auto}
